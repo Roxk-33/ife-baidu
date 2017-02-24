@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>IFE-nuomi-task_1</title>
+    <style type="text/css">
+        label{
+            width: 30px;
+            height: 20px;
+            display: block;
+            cursor: pointer;
+            position: relative;
+        }
+        /*
+        选项图形为圆圈
+        */
+        .circle{
+            background: url("http://p1.bqimg.com/567571/99322cf8c3283e42.png") no-repeat -10px -7px;
+        }
+        /*
+       选项图形为方框
+       */
+        .box{
+            background: url("http://p1.bqimg.com/567571/99322cf8c3283e42.png") no-repeat -10px -29px;
+        }
+        label::after{
+            content: attr(data-name);
+            display: inline-block;
+            position: relative;
+            left: 40px;
+            width: 300px;
+            height: 30px;
+            font-size: 20px;
+        }
+        input{
+            width: 18px;
+            height: 18px;
+            position: relative;
+            left: 40px;
+            opacity: 0; /*支持opacity*/
+            filter:alpha(opacity=0); /* IE */
+            -moz-opacity:0; /* 老版Mozilla */
+            z-index: 1;
+
+        }
+        #checkbox1:checked + label{
+            background-position-x:-45px;
+        }
+        #checkbox2:checked + label{
+            background-position-x:-45px;
+        }
+        #checkbox3:checked + label{
+            background-position-x:-45px;
+        }
+        #checkbox4:checked + label{
+            background-position-x:-45px;
+        }
+    </style>
+</head>
+<body>
+<input type="checkbox" id="checkbox1" >
+<label for="checkbox1" data-name="选项A" class="circle"></label>
+<input type="checkbox" id="checkbox2">
+<label for="checkbox2" data-name="选项A" class="circle"></label>
+<input type="checkbox" id="checkbox3">
+<label for="checkbox3" data-name="选项B" class="box"></label>
+<input type="checkbox" id="checkbox4">
+<label for="checkbox4" data-name="选项B" class="box"></label>
+</body>
+</html>

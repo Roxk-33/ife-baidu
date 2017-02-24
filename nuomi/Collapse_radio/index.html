@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Collapse_redio</title>
+    <style>
+        .collapse{
+            width: 40%;
+            height: 600px;
+            margin: 100px auto;
+        }
+        .collapse > div{
+            display: block;
+        }
+        .title{
+            width: 100%;
+            border: 1px solid #c4c4c4;
+            background-color: #cfcfcf;
+            padding: 10px;
+            box-sizing: border-box;
+            font-size: 20px;
+            cursor: pointer;
+        }
+        .title label{
+            cursor: pointer;
+
+        }
+        input{
+            display: none;
+        }
+        input:checked ~ div{
+            height: 130px;
+            padding: 20px;
+        }
+        .content{
+            border: 1px solid #c4c4c4;
+            height: 0;
+            transition: height 0.5s;
+            overflow: hidden;
+        }
+    </style>
+</head>
+<body>
+<div class="collapse">
+    <div class="collapse_1">
+        <div class="title"><label for="radio1">第一个</label></div>
+        <input type="radio" id="radio1" name="Collapse_redio">
+        <div class="content">
+            第一个第一个第一个第一个第一个第一个第一个第一个
+            第一个第一个第一个第一个第一个第一个第一个第一个
+            第一个第一个第一个第一个第一个第一个第一个第一个
+            第一个第一个第一个第一个第一个第一个第一个第一个
+            第一个第一个第一个第一个第一个第一个第一个第一个
+            第一个第一个第一个第一个第一个第一个第一个第一个
+        </div>
+    </div>
+    <div class="collapse_2">
+        <div class="title"><label for="radio2">第二个</label></div>
+        <input type="radio" id="radio2" name="Collapse_redio">
+        <div  class="content">
+            第二个第二个第二个第二个第二个第二个第二个第二个
+            第二个第二个第二个第二个第二个第二个第二个第二个
+            第二个第二个第二个第二个第二个第二个第二个第二个
+            第二个第二个第二个第二个第二个第二个第二个第二个
+            第二个第二个第二个第二个第二个第二个第二个第二个
+            第二个第二个第二个第二个第二个第二个第二个第二个
+        </div>
+    </div>
+    <div class="collapse_3">
+            <div class="title"><label for="radio3">第三个</label></div>
+            <input type="radio" id="radio3" name="Collapse_redio">
+            <div class="content">
+                第三个第三个第三个第三个第三个第三个第三个第三个
+                第三个第三个第三个第三个第三个第三个第三个第三个
+                第三个第三个第三个第三个第三个第三个第三个第三个
+                第三个第三个第三个第三个第三个第三个第三个第三个
+                第三个第三个第三个第三个第三个第三个第三个第三个
+                第三个第三个第三个第三个第三个第三个第三个第三个
+            </div>
+    </div>
+</div>
+</body>
+</html>

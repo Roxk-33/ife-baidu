@@ -18,7 +18,7 @@
             border: 5px solid deeppink;
             box-sizing: border-box;
             border-top: 5px solid transparent;
-            animation: Rot_cir_1 0.5s infinite linear;
+            animation: Rot_cir_1 .5s infinite linear;
             display: flex;
             align-items: center;
             justify-content: space-around;
@@ -37,9 +37,17 @@
             border-radius: 40px;
             box-sizing: border-box;
             border: 40px solid deeppink;
-            /*animation: Rot_cir_1 5s infinite linear;*/
+            animation: innerCir .5s infinite linear;
             transform: rotate(-45deg);
             position: relative;
+        }
+        @keyframes innerCir {
+            from{
+                transform: rotate(-45deg);
+            }
+            to{
+                transform: rotate(315deg);
+            }
         }
         .inner > div {
             width: 80px;
@@ -50,7 +58,7 @@
             left: -40px;
             top: -40px;
         }
-        .deeppink{
+        .filter{
             border: 40px solid transparent;
             border-left-color: pink;
             border-bottom-color: pink;
@@ -65,7 +73,7 @@
                 transform: rotate(-270deg);
             }
         }
-        .pink{
+        .maker{
             border: 40px solid transparent;
             border-left-color: deeppink;
             border-bottom-color:deeppink;
@@ -93,15 +101,13 @@
 </head>
 <body>
 <div class="ext_circle">
+    <div class="inner">
+        <div class="filter"></div>
+        <div class="maker"></div>
+        <div class="hider"></div>
+    </div>
+</div>
 
-</div>
-<div class="inner">
-    <div class="filter"></div>
-</div>
-<div class="inner">
-    <div class="filter"></div>
-    <div class="maker"></div>
-    <div class="hider"></div>
-</div>
+
 </body>
 </html>

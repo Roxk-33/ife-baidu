@@ -62,31 +62,22 @@
             left: -40px;
             top: -40px;
         }
-        .deeppink{
+        .pink{
             border: 40px solid transparent;
             border-left-color: pink;
             border-bottom-color: pink;
             transform: rotate(90deg);
-            animation: dpinkCir .8s infinite linear;
+            animation: pinkCir 1.8s infinite linear;
         }
 
-        .pink{
+        .denppink{
             border: 40px solid transparent;
             border-left-color: deeppink;
             border-bottom-color:deeppink;
             transform: rotate(90deg);
-            animation: pinkCir .8s infinite linear;
+            animation: dpinkCir 1.8s infinite linear;
         }
-        .hider{
-            border: 40px solid transparent;
-            border-left-color:pink;
-            border-bottom-color:pink;
-            opacity: 0;
-            transform: rotate(90deg);
-            animation: second-half-hide .8s infinite step-end;
-        }
-
-        @keyframes dpinkCir {
+        @keyframes pinkCir {
             /*
             0~25% 为pink逆时针旋转180度，让底层的deepingk显示
             25~50% 等待deeppink 霸占右边
@@ -96,10 +87,10 @@
             0%{ z-index: 2;  }
             25%{ transform: rotate(-90deg);}
             50%{ transform: rotate(-90deg);z-index: 1;}
-            75%{ transform: rotate(-270deg);z-index: 2;}
-            100%{transform: rotate(-450deg);z-index: 100;}
+            75%,100%{ transform: rotate(-270deg);z-index: 2;}
+
         }
-        @keyframes pinkCir {
+        @keyframes dpinkCir {
             /*
                 0~25% 为pink逆时针旋转180度，让底层的deepingk显示
                 25~50% 霸占右边
@@ -108,18 +99,13 @@
                 transform: rotate(90deg);
                 z-index: 1;
             }
-            50%,100%{
+            50%,75%{
                 transform: rotate(-90deg);
                 z-index: 2;
             }
-        }
-        @keyframes second-half-hide {
-            0%{
-                opacity: 0;
-            }
-            75%,100%{
-                z-index: 2;
-                opacity: 1;
+            100%{
+                transform: rotate(-270deg);
+                z-index: -20;
             }
         }
     </style>
@@ -127,9 +113,8 @@
 <body>
 <div class="ext_circle">
     <div class="inner">
-        <div class="deeppink"></div>
         <div class="pink"></div>
-        <div class="hider"></div>
+        <div class="denppink"></div>
     </div>
 </div>
 

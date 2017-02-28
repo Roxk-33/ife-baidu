@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>loding_Biscuits</title>
+    <script src="http://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+    <style type="text/css">
+
+        .ext_circle{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            margin-left: -100px;
+            margin-top: -100px;
+            width: 200px;
+            height: 200px;
+            border-radius: 100px;
+            border: 5px solid deeppink;
+            box-sizing: border-box;
+            border-top: 5px solid transparent;
+            animation: Rot_cir_1 0.5s infinite linear;
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+        }
+        @keyframes Rot_cir_1 {
+            from{
+                transform: rotate(360deg) ;
+            }
+            to{
+                transform: rotate(0deg)
+            }
+        }
+        .inner{
+            width: 80px;
+            height: 80px;
+            border-radius: 40px;
+            box-sizing: border-box;
+            border: 40px solid deeppink;
+            /*animation: Rot_cir_1 5s infinite linear;*/
+            transform: rotate(-45deg);
+            position: relative;
+        }
+        .inner > div {
+            width: 80px;
+            height: 80px;
+            border-radius: 40px;
+            box-sizing: border-box;
+            position: absolute;
+            left: -40px;
+            top: -40px;
+        }
+        .deeppink{
+            border: 40px solid transparent;
+            border-left-color: pink;
+            border-bottom-color: pink;
+            transform: rotate(90deg);
+            animation: spiner .8s infinite linear;
+        }
+        @keyframes spiner {
+            0%{
+                transform: rotate(90deg);
+            }
+            100%{
+                transform: rotate(-270deg);
+            }
+        }
+        .pink{
+            border: 40px solid transparent;
+            border-left-color: deeppink;
+            border-bottom-color:deeppink;
+            opacity: 0;
+            transform: rotate(90deg);
+            animation: second-half-show .8s infinite step-end;
+        }
+        .hider{
+            border: 40px solid transparent;
+            border-right-color: pink;
+            border-bottom-color:pink;
+            opacity: 1;
+            animation: second-half-hide .8s infinite step-end;
+        }
+        @keyframes second-half-hide {
+            0%        { opacity: 1; }
+            50%, 100% { opacity: 0; }
+        }
+        @keyframes second-half-show {
+            0%        { opacity: 0; }
+            50%, 100% { opacity: 1; }
+        }
+
+    </style>
+</head>
+<body>
+<div class="ext_circle">
+
+</div>
+<div class="inner">
+    <div class="filter"></div>
+</div>
+<div class="inner">
+    <div class="filter"></div>
+    <div class="maker"></div>
+    <div class="hider"></div>
+</div>
+</body>
+</html>

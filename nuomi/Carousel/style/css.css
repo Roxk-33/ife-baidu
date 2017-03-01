@@ -20,7 +20,7 @@
 .images .image-1{
     animation: carousel_1 3s ;
     left: 0px;
-    transform: perspective(0) translateZ(-200px)  rotateY(0deg) ;
+    transform: perspective(0) translateZ(-200px)  rotateY(0deg);
 }
 .images .image-2{
     animation: carousel_2 3s ;

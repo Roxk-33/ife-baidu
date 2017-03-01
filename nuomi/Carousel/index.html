@@ -17,4 +17,24 @@
     </ul>
 </div>
 </body>
+<script>
+   function starAni() {
+
+        var aLi = document.getElementsByTagName("li"),
+            aClass = ["image-1","image-2","image-3","image-4","image-5","image-6"],
+            timer = null;
+        function startMove() {
+            var par = /(?=.)\d/,
+                result = null;
+            for(var i = 0,len = aLi.length; i <len;i++){
+                result = parseInt( par.exec(aLi[i].className));
+                result < 6 &&( aLi[i].className = aClass[result] )||  (aLi[i].className = aClass[0]);
+            }
+        }
+        timer = setInterval(function () {
+            startMove();
+        },3000)
+   }
+   starAni();
+</script>
 </html>

@@ -1,0 +1,115 @@
+
+.contanier{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-left: -250px;
+    margin-top: -140px;
+}
+.images{
+    position: relative;
+    transform-style: preserve-3d;
+}
+.images li{
+    width: 500px;
+    height: 281px;
+    list-style: none;
+    position: absolute;
+    display: inline-block;
+}
+.images .image-1{
+    animation: carousel_1 3s ;
+    left: 0px;
+    transform: perspective(0) translateZ(-200px)  rotateY(0deg) ;
+}
+.images .image-2{
+    animation: carousel_2 3s ;
+    left: -320px;
+    transform: perspective(800px) translateZ(-500px) rotateY(-120deg);
+
+}
+.images .image-3{
+    animation: carousel_3 3s ;
+    left: -160px;
+    transform: perspective(800px) translateZ(-1800px) rotateY(-140deg);
+
+}
+.images .image-4{
+    animation: carousel_4 3s ;
+    left: 0;
+    transform: perspective(800px) translateZ(-2400px) rotateY(-180deg);
+}
+.images .image-5{
+    animation: carousel_5 3s ;
+    left: 160px;
+    transform: perspective(800px) translateZ(-1800px) rotateY(-220deg);
+}
+.images .image-6{
+    animation: carousel_6 3s ;
+    left: 320px;
+    transform: perspective(800px) translateZ(-500px) rotateY(-240deg);
+
+}
+@keyframes carousel_1 {
+    from{
+        left: 320px;
+        transform: perspective(800px) translateZ(-500px) rotateY(120deg);
+    }
+    to{
+        left: 0px;
+        transform: perspective(0) translateZ(-200px)  rotateY(0deg) ;
+    }
+}
+@keyframes carousel_2 {
+    from{
+        left: 0px;
+        transform: perspective(0) translateZ(-200px) rotateY(0deg);
+    }
+    to{
+        left: -320px;
+        transform: perspective(800px) translateZ(-500px) rotateY(-120deg);
+
+    }
+}
+@keyframes carousel_3 {
+    from{
+        left: -320px;
+        transform: perspective(800px) translateZ(-500px) rotateY(-120deg);
+
+    }
+    to{
+        left: -160px;
+        transform: perspective(800px) translateZ(-1800px) rotateY(-140deg);
+    }
+}
+@keyframes carousel_4 {
+    from{
+        left: -160px;
+        transform: perspective(800px) translateZ(-1800px) rotateY(-140deg);
+    }
+    to{
+        left: 0;
+        transform: perspective(800px) translateZ(-2400px) rotateY(-180deg);
+    }
+}
+@keyframes carousel_5 {
+    from{
+        left: 0;
+        transform: perspective(800px) translateZ(-2400px) rotateY(-180deg);
+    }
+    to{
+        left: 160px;
+        transform: perspective(800px) translateZ(-1800px) rotateY(-220deg);
+    }
+}
+@keyframes carousel_6 {
+    from{
+        left: 160px;
+        transform: perspective(800px) translateZ(-1800px) rotateY(-220deg);
+    }
+    to{
+        left: 320px;
+        transform: perspective(800px) translateZ(-500px) rotateY(-240deg);
+    }
+}
+

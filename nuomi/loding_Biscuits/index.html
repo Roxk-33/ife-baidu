@@ -6,7 +6,7 @@
     <script src="http://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
     <style type="text/css">
 
-        .ext_circle{
+        .circle{
             position: absolute;
             top: 50%;
             left: 50%;
@@ -32,7 +32,6 @@
             }
         }
         .inner{
-
             border-radius: 40px;
             border: 40px solid deeppink;
             border-right-color: pink;
@@ -84,7 +83,7 @@
             50~75% 为pingk霸占左边
             75~100% 为霸占右边
              */
-            0%{ z-index: 2;  }
+            0%{ z-index: 2;}
             25%{ transform: rotate(-90deg);}
             50%{ transform: rotate(-90deg);z-index: 1;}
             75%,100%{ transform: rotate(-270deg);z-index: 2;}
@@ -111,7 +110,7 @@
     </style>
 </head>
 <body>
-<div class="ext_circle">
+<div class="circle">
     <div class="inner">
         <div class="pink"></div>
         <div class="denppink"></div>

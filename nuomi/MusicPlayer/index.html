@@ -1,0 +1,55 @@
+﻿<!DOCTYPE html>
+<html lang="zh-cmn-Hans">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="xiao">
+    <title>豆瓣音乐播放器</title>
+    <script src="./js/jquery.min.js"></script>
+    <script src="./js/event.js"></script>
+    <script src="./js/music.js"></script>
+    <link href="style.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <div class="music">
+            <div class="music-content">
+                <div class="music-title"><a href="#">幸运大门</a></div>
+                <div class="music-author"><a href="#">郭静</a></div>
+                <div class="music-timeline">
+                    <div class="box">
+                        <div class="time-box"><span class="time">-1:30</span></div>
+                        <div class="voice-box">
+                            <a class="voice button-icon" href="#" action-type="Muted"><i class="icon" title="音量"></i></a>
+                            <div class="voiceProcessAll">
+                                <div class="voiceProcessNow"></div>
+                                <i class="voice-btn"></i>
+                            </div>
+                        </div>
+                        <div class="music-buttons">
+                            <a class="lyrics button-icon" href="#"><i class="icon" title="歌词"></i></a>
+                            <a class="addTolist button-icon" href="#"><i class="icon" title="增加到歌单"></i></a>
+                            <a class="list button-icon" href="#"><i class="icon" title="歌单"></i></a>
+                        </div>
+                    </div>
+                    <div class="musicProcessAll"><div class="musicProcessNow"></div></div>
+                </div>
+            </div>
+            <div class="music-control">
+                <div class="left">
+                    <a class="like button-icon"><i class="icon" title="收藏"></i></a>
+                    <a class="delete button-icon"><i class="icon" title="删除"></i></a>
+                </div>
+                <div class="right">
+                    <input type="checkbox" id="stop" name="stop">
+                    <label class="stop button-icon" for="stop" action-type="controlPlay"><i class="icon"></i></label>
+                    <a class="next button-icon"><i class="icon"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="music-cover">
+            <div class="img"></div>
+        </div>
+    </div>
+</body>
+</html>

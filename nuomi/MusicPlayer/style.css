@@ -111,6 +111,7 @@ a {
     width: 50px;
     background-color: #FF6B84;
 }
+
 .voice-btn{
     display: inline-block;
     width: 7px;
@@ -122,7 +123,7 @@ a {
     padding: 3px;
     position: absolute;
     top: -6px;
-    left: 50px;
+    left: 42px;
     z-index: 2;
     cursor: pointer;
 }
@@ -154,19 +155,38 @@ a {
 .list .icon:after{
     background: url("icon/mylist.png") no-repeat;
 }
-
+/*
+    进度条
+ */
 .musicProcessAll {
     height: 2px;
     background-color: #a1a1a1;
     margin-top: 20px;
 }
 
-.musicProcessAll .musicProcessNow {
+.musicProcessNow {
     height: 2px;
-    width: 200px;
+    width: 0px;
     background-color: #FF6B84;
+    position: relative;
 }
+.process-btn{
+    display: inline-block;
+    width: 7px;
+    height: 7px;
+    border: 2px solid #ff2534;
+    background-color: #ff2534;
+    background-clip: content-box;
+    border-radius: 50%;
+    padding: 3px;
+    position: absolute;
+    top: -7px;
+    left: -5px;
+    cursor: pointer;
+}
+.process-btn{
 
+}
 .music-control .left {
     float: left;
 }

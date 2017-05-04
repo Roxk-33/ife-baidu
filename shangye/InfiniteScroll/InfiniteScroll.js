@@ -67,9 +67,4 @@
         return this;
     }
 
-
-
-
-
-
 }(jQuery))

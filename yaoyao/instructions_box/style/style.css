@@ -1,0 +1,16 @@
+.part{
+    perspective:200px;
+    position: absolute;
+    width: 300px;
+    height: 200px;
+    top: 40%;
+    left: 40%;
+}
+.part1{
+    position: relative;
+
+    width: 300px;
+    height: 200px;
+    background-color: red;
+    /*transform: translateZ(-100px);*/
+}

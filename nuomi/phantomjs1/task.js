@@ -5,7 +5,7 @@ phantom.outputEncoding = "gb2312";
 
 
 var page = require('webpage').create(),
-    searchValue = "phantomjs",
+    searchValue = "phantomjs1",
     url = "http://baidu.com/s?wd=" + searchValue,
     outPut = {};
 outPut.word = searchValue;

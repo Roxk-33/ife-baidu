@@ -1,0 +1,67 @@
+{
+    "code": 1,
+    "msg": "抓取成功",
+    "time": 1500523561482,
+    "dataList": [
+        {
+            "title": "undefined_百度翻译",
+            "info": "",
+            "link": "http://www.baidu.com/link?url=6b4NRVOMgIl9yZ1e0aUTC0QMRIBK_Ck0NJcIRWvrpxQfEUUOZeooTsbblRWVBlSyyezlPJqYO4xFDiLo5vDCtq",
+            "pic": ""
+        },
+        {
+            "title": "undefined什么意思,是指什么,出现时怎么解决？_百度经验",
+            "info": "",
+            "link": "http://www.baidu.com/link?url=1WfGN3fMyqxLIHF3wL4JRxe-I5z9-S3RU0d8Z2zRJvAal_GAHVpMgBcex1Vyfp23qPpQ553j6uc7NTnSX7fFxZwgf89Rr8QvhvFh1jo8sUq",
+            "pic": ""
+        },
+        {
+            "title": "js判断undefined类型,undefined,null, 的区别详细解析_..._脚本之家",
+            "info": "2013年12月16日 - 本篇文章主要是对js判断undefined类型,undefined,null,NaN的区别进行了详细的分析介绍,需要的朋友可以过来参考下,希望对大家有所帮助",
+            "link": "http://www.baidu.com/link?url=I2Q56s7KGDNxKc_EuLntGhOMXP64xGvPMJl5222g0_nLNORsAzvW-FuOsm9ku53D",
+            "pic": ""
+        },
+        {
+            "title": "JavaScript undefined 属性",
+            "info": "undefined 属性用于存放 JavaScript 的 undefined 值。 语法 undefined 说明 无法使用 for/in 循环来枚举 undefined 属性,也不能用 delete 运算符来删除它。 undefin...",
+            "link": "http://www.baidu.com/link?url=FfdTzKSAjgqSyi9BbA4xjrWKtc0GTFgkzmknYXAYCK5lIAi_aNt4tyRadkoyM-tr25YX2No_5PZSSLfXHqksKq",
+            "pic": ""
+        },
+        {
+            "title": "undefined是什么意思啊_百度知道",
+            "info": "最佳答案: 对,就是未定义。 估计你是在调试程序遇见,若是这种情况,一般是出现了未定义的字符,需要宏定义一下。更多关于undefined的问题>>",
+            "link": "http://www.baidu.com/link?url=oP0u9tbY5qbes_R7pYUeS2FzlIJuu0nuifqsXFTo0vzLcw17inkrcEPtjV_Wqu4AMI3uHq7kHyQK8zsV2y8ACa",
+            "pic": ""
+        },
+        {
+            "title": "undefined_歌曲免费试听下载_百度音乐",
+            "info": "",
+            "link": "http://www.baidu.com/link?url=j9QZqLkvliEV2nC0OXEG6ycVd-XzLXQBUp451KoMCUJnn8Pv2FOrrldSzGspx-G_mRzowwd-_bjjcWnLgQ4DZq",
+            "pic": ""
+        },
+        {
+            "title": "undefined_百度百科",
+            "info": "",
+            "link": "http://www.baidu.com/link?url=e1E4m_u75aGgKA_mNQ0rokcT87VgkMLmgc6pbEL8R1r1g5HWfg2B_foeaI0KSIBP7CNnNtj5q0vC7oYc70niSSwk6K-bAYAnngh6VBNwK2C",
+            "pic": ""
+        },
+        {
+            "title": "undefined_百度百科",
+            "info": "",
+            "link": "http://www.baidu.com/link?url=e1E4m_u75aGgKA_mNQ0rokhOc30ANWld-TjhESXa6exZYsPGDkq3ycxgGiY5jOGFFrZrXat9zmz8cLTXw-Klsaa563KwShmg9_oqpdjgPPC",
+            "pic": ""
+        },
+        {
+            "title": "undefined吧_百度贴吧",
+            "info": "",
+            "link": "http://www.baidu.com/link?url=0rS6aQ0a31Xz5XtAWuei0xubtTmu_W-9pEUd5JsanKgDfE84rEAzm2G19wQsVviLlDusDKGfX-9zDvgkZSJvWq",
+            "pic": ""
+        },
+        {
+            "title": "js判断undefined类型 - 冰危节奏 - 博客园",
+            "info": "2010年4月8日 - alert(\"undefined\"); }  typeof 返回的是字符串,有六种可能:\"number\"、\"string\"、\"boolean\"、\"object\"、\"function\"、\"undefined\"posted...",
+            "link": "http://www.baidu.com/link?url=6gbOTahpHVhqgrR8O_4QZkiWF36Ql0mq7P_cVRkTX7_AudeFXGcIN-zLpUYSpiq-3VPnQtYXhIAWHvnY45JXm5dz8KY4D2r2R0lrjnpHTce",
+            "pic": ""
+        }
+    ]
+}

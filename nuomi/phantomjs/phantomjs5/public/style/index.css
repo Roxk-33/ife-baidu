@@ -1,0 +1,37 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+.contanier{
+    width:400px;
+    margin: 30px auto;
+}
+.oTable{
+    max-width: 800px;
+    margin: 50px auto;
+}
+.searchResults{
+
+    border: 1px solid #666666;
+    border-collapse: collapse;
+    cellpadding:0;
+    cellspacing:0;
+}
+.searchResults th{
+    padding: 15px 20px;
+    font-size: 26px;
+    font-weight: 400;
+}
+.searchResults td{
+    margin: 0 30px;
+    padding:10px 20px;
+    border: 1px solid black;
+    min-width: 150px;
+    font-size: 15px;
+}
+
+.dataImg{
+    width: 120px;
+    height: 120px;
+    display: inline-block;
+}

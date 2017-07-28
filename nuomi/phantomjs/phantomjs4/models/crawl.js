@@ -30,9 +30,9 @@ page.open(url, function (status) {
                 var total = $('.c-container');
                 for (var i = 0; i < total.length; i++) {
                     var list = {};
-                    list.title = $(total[i]).find('.t').text().trim();
                     list.info = $(total[i]).find('.c-abstract').text();
                     list.link = $(total[i]).find('.t a').attr('href');
+                    list.title = $(total[i]).find('.t').text().trim();
                     var img = $(total[i]).find('.c-img');
                     list.img = img.length ? img.attr('src') : '';
                     tmp.push(list);

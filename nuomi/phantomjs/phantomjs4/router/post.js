@@ -7,9 +7,8 @@ let   express = require('express'),
       getResult = require('../models/getDate');
 
 router.get('/',search,(req,resp)=>{
-    let key = req.query.key,
-        device = req.query.device;
-    console.log(key)
+    let key = req.query.key;
+
     getResult(key,function (result) {
         resp.send(result.dataList)
     });

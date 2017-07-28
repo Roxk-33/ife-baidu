@@ -24,8 +24,8 @@ module.exports = function (req, resp, next) {
 
             downImg(data, function (post) {
                 console.log("send");
-                let result = new Result(JSON.parse(stdout));
-
+                let result = new Result(post);
+                console.log(post)
                 result.save(function (err, result) {
                     if (err) console.log(err);
                     else {
